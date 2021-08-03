@@ -1,0 +1,13 @@
+import numpy as np
+def count11(seq):
+   # define this function and return the number of occurrences as a number
+   #print(len(seq2))
+   cnt=0;
+   i=0;
+   while i < len(seq):
+       if seq[i] and seq[i+1]==1 :
+           cnt=cnt+1;
+       i=i+1;
+   return cnt
+
+print(count11([0, 0, 1, 1, 1,0])) # this should print 2
